@@ -1,9 +1,10 @@
+from dotenv import load_dotenv
+load_dotenv()
 import streamlit as st
 import os
 from Senti import extract_video_id,analyze_sentiment,bar_chart,plot_sentiment
 from YoutubeCommentScrapper import save_video_comments_to_csv,get_channel_info,youtube,get_channel_id,get_video_stats
-from dotenv import load_dotenv
-load_dotenv()
+
 
 
 def delete_non_matching_csv_files(directory_path, video_id):
